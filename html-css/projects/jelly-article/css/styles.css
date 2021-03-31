@@ -1,0 +1,73 @@
+body {
+    font-family: "Georgia";
+    font-size: 18px;
+}
+
+main {
+    margin: 48px;
+}
+
+figure {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom:0px;
+}
+
+#topic-link {
+    font-size: 20px;
+    color: #e7131a;
+}
+
+#sub-title {
+    font-size:24px;
+    margin:0 0 8px 0;
+}
+
+header > address, header > time {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+header > address {
+    display: inline;
+    color: #e7131a;
+}
+
+article > section {
+    padding-top:20px;
+}
+
+article video {
+    margin-top:20px;
+}
+
+.meet {
+    padding-top:5px;
+}
+
+.meet > h2 {
+    padding-bottom:12px;
+    border-bottom: 1px solid #000;
+}
+
+.meet > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom:24px;
+    border-bottom: 1px solid #000;
+}
+
+.meet a {
+    color: #e7131a;
+}
+
+
+
