@@ -1,5 +1,2 @@
-"# course-prep" 
+# Initial page
 
-# Instructions
-
-![Design preview](./html/challenges//design.PNG)
