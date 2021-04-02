@@ -1,5 +1,5 @@
 body {
-    font-family: "Georgia";
+    font-family: Georgia, sans-serif;
     font-size: 18px;
 }
 
@@ -7,15 +7,16 @@ main {
     margin: 48px;
 }
 
-figure {
-    margin:0;
-    padding:0;
+section {
+    margin-bottom: 40px;
 }
 
 h1 {
     font-size: 32px;
+    margin-top:8px;
     margin-bottom:0px;
 }
+
 
 #topic-link {
     font-size: 20px;
@@ -27,26 +28,26 @@ h1 {
     margin:0 0 8px 0;
 }
 
-header > address, header > time {
+.title > address, .title > time {
     font-weight: 600;
     font-size: 11px;
 }
 
-header > address {
+.title > address {
     display: inline;
     color: #e7131a;
 }
 
-article > section {
-    padding-top:20px;
-}
-
-article video {
-    margin-top:20px;
+.avatar {
+    margin-right:5px;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .meet {
-    padding-top:5px;
+    border-bottom: 1px solid #000;
 }
 
 .meet > h2 {
@@ -55,18 +56,23 @@ article video {
 }
 
 .meet > ul {
-    margin: 0;
-    padding: 0;
+    /* padding:0px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom:24px;
-    border-bottom: 1px solid #000;
+    justify-content: space-evenly; */
 }
 
 .meet a {
     color: #e7131a;
+}
+
+.jelly figure {
+    margin-left:0;
+}
+
+figure img {
+    width:100%;
 }
 
 
