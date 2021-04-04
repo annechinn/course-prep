@@ -45,8 +45,14 @@
 
   #articles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 16px;
+  }
+
+  @media screen and (min-width:600px) {
+    #articles {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .card {
@@ -98,9 +104,26 @@
   
   #main-nav .container {
     display: grid;
-    grid-template-columns: 6fr 3fr 2fr;
-    padding: 16px;
+    grid-template-columns: 1fr;
+    padding: 18px;
+    justify-content: right;
   }
+
+  #main-nav ul {
+    text-align:right;
+    flex-direction:column;
+    display: flex;
+  }
+
+@media screen and (min-width:600px) {
+  #main-nav .container {
+    grid-template-columns: 6fr 3fr 2fr;
+  }
+
+  #main-nav ul {
+    flex-direction:row;
+  }
+}
   
   #main-nav .logo {
     width: 180px;
@@ -108,10 +131,6 @@
 
   #main-nav ul {
     list-style: none;
-  }
-
-  #main-nav ul {
-    display: flex;
   }
   
   #main-nav ul li a {
@@ -149,10 +168,17 @@
   #main-footer .footer-container {
     padding: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 24px;
   }
   
+  @media screen and (min-width:600px) {
+    #main-footer .footer-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
   #main-footer .footer-container input[type='email'] {
     padding: 8px;
     margin-bottom: 8px;
