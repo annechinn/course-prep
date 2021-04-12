@@ -1,0 +1,5 @@
+
+
+const scanFromLeftToRight = (str) => {
+    
+}

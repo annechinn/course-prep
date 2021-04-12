@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      font-family: 'Poppins';
+      font-size:15px;
+      background-color: hsl(0, 0%, 98%);
+      padding:60px;
+      margin:0;
+    }
+
+    main { 
+      background: white;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
+    main div {
+      margin: 0 auto;
+      color: white;
+      margin: 5px auto;
+    }
+
+    .heading2 {
+      font-weight:600;
+      font-size:26px;
+      color: #505268;
+      text-align:center;
+    }
+
+    .heading1 {
+      font-weight:400;
+      font-size:26px;
+      color: #b5b4bb;
+      text-align:center;
+    }
+
+    .description {
+      font-weight:600;
+      font-size:12px;
+      color: #dedde2;
+      width:500px;
+      text-align:center;
+    }
+
+    .cards {
+      margin-top:30px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas: 
+        "left-col middle-col right-col"
+    }
+
+    .card {
+      padding:10px;
+      margin-bottom:20px;
+      border-radius: 5px 5px 5px 5px;
+
+      box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+      display:grid;
+      grid-template-areas:
+        "card-title"
+        "card-desc"
+        "card-image"
+    }
+
+    .card-title {
+      color: #878792;
+      font-weight:600;
+      text-align:left;
+      width:90%;
+    }
+
+    .card-desc {
+      margin-bottom:30px;
+      color: #d5d4d9;
+      font-weight:400;
+      text-align:left;
+      font-size:12px;
+      width:90%;
+    }
+
+    .card-image {
+      text-align:right;
+      width:90%;
+    }
+
+    .supervisor {
+      border-top: solid 3px #4cd2d2;
+    }
+
+    .team-builder {
+      border-top: solid 3px #ea5656;
+    }
+
+    .calculator {
+      border-top: solid 3px #5a9fee;
+    }
+
+    .karma {
+      border-top: solid 3px #fcbd6e;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <main>
+    <div class="heading1">Reliable, efficient delivery</div>
+    <div class="heading2">Powered by Technology</div>
+
+    <div class="description">
+      Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful
+    </div>
+
+    <div class="cards">
+      <div class="left-col">
+        <div class="card supervisor">
+          <div class="card-title">Supervisor</div>
+          <div class="card-desc">
+             Monitors activity to identify project roadblocks
+          </div>
+          <div class="card-image">
+            <img src="images/icon-supervisor.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="middle-col">
+        <div class="card team-builder">
+          <div class="card-title">Team Builder</div>
+          <div class="card-desc">
+            Scans our talent network to create the optimal team for your project
+          </div>
+          <div class="card-image">
+            <img src="images/icon-team-builder.svg">
+          </div>
+        </div>
+        <div class="card karma">
+          <div class="card-title">Karma</div>
+          <div class="card-desc"
+            >Regularly evaluates our talent to ensure quality
+          </div>
+          <div class="card-image">
+            <img src="images/icon-karma.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="right=col">
+        <div class="card calculator">
+          <div class="card-title">Calculator</div>
+          <div class="card-desc">
+            Uses data from past projects to provide better delivery estimates
+          </div>
+          <div class="card-image">
+            <img src="images/icon-calculator.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

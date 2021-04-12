@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    /* --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --lightGrey: hsl(204, 43%, 93%);
+    --blueGrey: hsl(218, 22%, 67%);
+    --white: hsl(69, 69%, 100%); */
+
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    padding: 4.5rem 2rem 0;
+}
+
+
+
+section {
+    padding: 1.75rem 1.5rem 2rem;
+  }
+  
+
+h1 {
+    font-size: 1.25rem;
+    line-height: 1.15rem;
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    letter-spacing: -0.22px;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: hsl(218, 22%, 67%);
+    letter-spacing: -0.2px;
+  }
+
+  button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0973);
+  }
+
+  button:hover {
+    background-color: hsl(71, 73%, 48%);
+  }
+
+  .description {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .description h2 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1rem;
+    font-size: 0.9375rem;
+  }
+  
+  .price-box {
+    background-color: hsl(179, 62%, 43%);
+    padding-bottom: 1.5rem;
+  }
+  
+  .price-box h2 {
+    color: white;
+    padding-bottom: 1.125rem;
+  }
+  
+  .price-box p {
+    color:white;
+    font-size: 1rem;
+  }
+  
+  .price-box .pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0.25rem;
+    color:hsla(0, 0%, 100%, 50%);
+  }
+  
+  .price-box .pricing .price {
+    color: white;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    font-weight: bold;
+    padding-right: 0.75rem;
+  }
+  
+  .pricing-description {
+    padding-bottom: 1.625rem;
+  }
+
+  .about {
+    background-color: hsla(179, 62%, 43%, 80%);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .about h2 {
+    color: white;
+    padding-bottom: 1rem;
+  }
+  
+  .about p {
+    color: hsla(0, 0%, 100%, 50%);
+    line-height: 1.25rem;
+  }
+
+
+  
+@media screen and (min-width: 40rem) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10.25rem 2rem 2rem;
+      margin: 0 auto;
+      max-width: 43.75rem;
+    }
+
+    .description {
+        grid-column: 1 / 3;
+    }
+  }

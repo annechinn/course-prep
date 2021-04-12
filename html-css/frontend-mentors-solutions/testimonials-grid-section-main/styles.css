@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color:   hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    margin: 50px auto;
+    width: 80%;
+
+    display: grid;
+    grid-template-rows:repeat(2,auto);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+     "a a b c"
+     "d e e c";
+     grid-gap: 15px;
+     
+     font-size: 13px;
+}
+
+main > .card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-areas:
+        "card_header"
+        "quote"
+        "description";
+    grid-gap: 15px;
+}
+
+.card-header {
+    height:30px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-areas:
+        "photo name"
+        "photo grad";
+}
+
+.card-header > img {
+    grid-area:photo;
+}
+
+.card-header > h4 {
+    text-align:left;
+    grid-area:name;
+}
+
+.card-header > p {
+    grid-area:grad;
+    opacity:60%;
+}
+
+.dark-card {
+    color: #e4e9f1;
+}
+
+.dark-card > p {
+    color: #abb0b8;
+}
+
+.light-card {
+    color: #707685;
+}
+
+.light-card > p {
+    opacity: 60%;
+}
+
+img {
+    width: 38px;
+    border-radius: 50%;
+}
+
+.item_1 {
+
+    background-color:hsl(263, 55%, 52%);
+    grid-area: a;
+    grid-gap: 10px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-position-x: 80%;
+}
+
+.item_2 {
+    background-color:hsl(217, 19%, 35%);
+    grid-area: b;
+}
+
+.item_3 {
+    background-color:hsl(0, 0%, 100%);
+    grid-area: c;
+}
+
+.item_4 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: d;   
+}
+
+.item_5 {
+    background-color:hsl(219, 29%, 14%);
+    grid-area: e;    
+}
+
+@media only screen and (max-width: 1000px)
+{
+    main{   
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: "a b" "d e" "c c";
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    main{   
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: "a" "b" "c" "e" "d";
+    }
+}
