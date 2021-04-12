@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="taxi-form">
+      <h1>Taxi Pickup Form</h1>
+      <form class="myForm">
+        <div class="left">
+          <div class="input-group">
+            <label for="customer_name">Name</label>
+            <input id="customer_name" />
+          </div>
+          <div class="input-group">
+            <label for="phone_number">Phone</label>
+            <input type="tel" id="phone_number" />
+          </div>
+          <div class="input-group">
+            <label for="email_address">Email</label>
+            <input type="email" id="email_address" />
+          </div>
+          <div class="input-group">
+            <label for="pickup_time">Pickup Date/Time</label>
+            <input type="datetime-local" id="pickup_time" />
+          </div>
+          <div class="input-group">
+            <label for="pickup_place">Pickup Place</label>
+            <select id="pickup_place">
+              <option value="" selected="selected">Select One</option>
+              <option value="airport">Airport</option>
+              <option value="downtown">Downtown</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="dropoff_place">Dropoff Place</label>
+            <input type="text" id="dropoff_place" list="destinations" />
+
+            <datalist id="destinations">
+              <option value="Airport"></option>
+              <option value="Downtown"></option>
+              <option value="Home"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="right">
+          <fieldset class="taxi">
+            <legend>Which taxi do you require?</legend>
+            <label>
+              <input type="radio" id="taxi_car" value="car" /> Car
+            </label>
+            <label>
+              <input type="radio" id="taxi_van" value="van" /> Van
+            </label>
+          </fieldset>
+
+          <fieldset class="extras">
+            <legend>Extras</legend>
+            <label>
+              <input type="checkbox" id="extras_baby" value="baby" /> Baby Seat
+            </label>
+            <label>
+              <input type="checkbox" id="extras_wheel" value="wheelchair" />
+              Wheelchair Access
+            </label>
+          </fieldset>
+        </div>
+        <div class="bottom">
+          <button id="submit">Submit Booking</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- <form action="https://formspree.io/f/xpzkzqpn" method="POST">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" name="firstName" type="text" />
+        </div>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input id="lastName" name="lastName" type="text" />
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" name="dateOfBirth" type="date" />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" />
+        </div>
+        <input type="submit" value="Submit"/>
+    </form> -->
+  </body>
+</html>

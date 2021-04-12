@@ -1,0 +1,64 @@
+#taxi-form {
+    text-align:center;
+    margin: 0 20%;
+}
+
+.myForm {
+    display: grid;
+    grid-gap:12px;
+    grid-template-areas: 
+        "left right"
+        "bottom bottom";
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+grid-area: right;
+}
+
+.bottom {
+    grid-area:bottom;
+}
+
+
+.left > .input-group {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input-group > label {
+    margin-right: 16px; 
+    padding: 8px 0;
+}
+
+.right fieldset {
+    display:flex;
+    flex-direction: column;
+}
+
+fieldset > label {
+    text-align:left;
+}
+
+.myForm input,
+.myForm select {
+    flex-grow: 1; 
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.myForm button {
+    padding: 10px; 
+    background-color:grey;
+    color: white;
+    border: 0;
+    width:300px;
+    border-radius:5px;
+}
+
+.myForm button:hover {
+    background-color:slategrey;
+}
