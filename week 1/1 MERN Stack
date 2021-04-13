@@ -1,0 +1,52 @@
+
+Who knows what a the MERN Stack stands for?
+
+M - Mongo DB
+E - Express JS
+R - React
+N - Node.js
+
+Which of those run on the client vs the server?
+
+We're missing some important technologies. Any ideas?
+
+HTML, CSS, JavaScript
+
+Let's break down what a web application consists of
+and where the "Tech Stack" fits in.
+
+Bring up Google.com
+
+Simple web page, right? Let's break down the parts.
+
+    - type in URL, page shows up, where did the page come from?
+    - web server (computer) - returns page requests, image, css, pdf
+    - not part of your developer team job
+
+    - just an input box....type something in.. what happens?
+    - search suggestions.... where are those coming from?
+    - client code talks to server code, typing so far, what's a good match?
+    - look at network activity
+    - who's listening? Express JS, but it's just a bridge
+    - how to access data in database? need to write code.... JavaScript
+    - JavaScript is special, can't run just anywhere, needs container, like a web browser, Node.js
+    - where are those suggestions coming from? stored in a database.
+
+client
+    - markup to display the page - HTML, CSS, React/JavaScript
+    - code to communicate with code on the server - JavaScript
+    - code to update the HTML as server returns new data - JavaScript/React
+server
+    - code to listen for client  - Express.JS
+    - code to go get data - JavaScript/Node.JS
+    - database to store data - MongDB
+
+Alternatives? 
+    - tons
+    - substitute Angular for React, MERN->MEAN
+
+ Why MERN?
+    - React is most popular (now).
+    - React vs Angular
+    - JavaScript - one language, easier than C#, JavaScript
+    - DB - easier, non-relational
