@@ -23,7 +23,7 @@ const Main = () => {
     const articlesJSX = articles
         .filter(x=>x.id!=showCaseArticle.id)
         .map(article=><ArticleCard key={article.id} article={article}/>);
-        
+
     return (
         <>
 

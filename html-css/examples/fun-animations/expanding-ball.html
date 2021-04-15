@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            transition: 3s all ease;
+        }
+
+        body {
+            background-color: cornflowerblue;
+        }
+
+        .wrapper {
+            width: 95vw;
+            height: 93vh;
+            border: 20px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            height: 40vh;
+            width: 50vw;
+            border-radius: 999px;
+        }
+
+        .container:hover {
+            border: 100px solid black;
+            height: 500px;
+            width: 500px;
+        }
+
+        .left {
+            border: 3px dotted yellow;
+
+        }
+
+        .right {
+            border: orange dashed;
+        }
+
+        .ball {
+            border: 5px solid lemonchiffon;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color:lightgoldenrodyellow;
+            position: relative;
+            margin: auto;
+            top: 100px;
+        }
+
+        .ball:hover {
+            background-color: lightskyblue;
+            top: 200px;
+            cursor: pointer;
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container left">
+            <div class="ball"></div>
+        </div>
+        <div class="container right">
+        </div>
+    </div>
+</body>
+</html>
