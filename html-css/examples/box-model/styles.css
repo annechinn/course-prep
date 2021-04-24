@@ -1,0 +1,15 @@
+div {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9cb9c;
+    
+  }
+  p {
+    width:200px;
+    background-color: lightblue;
+    padding: 20px;
+    border: solid 10px #fce5cd;
+    margin: 20px;
+   }

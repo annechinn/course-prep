@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="wrapper">
+  
+        <div class="center">
+        
+          <h1>RoboSquidTV - The CSS Box Model</h1>
+      
+      <div id="controls">
+      <span>Height</span> <input id="boxHeight" type="range" min="0" max="10" step="0.1" onInput="updateHeight(this.value)" value="0">
+        <br>
+       <span>Width</span> <input id="boxWidth" type="range" min="0" max="40" step="0.1" onInput="updateWidth(this.value)" value="0">
+         <br>
+       <span>Padding</span> <input id="boxPadding" type="range" min="0" max="5" step="0.1" onInput="updatePadding(this.value)" value="0">
+         <br>
+       <span>Margin</span> <input id="boxMargin" type="range" min="0" max="5" step="0.1" onInput="updateMargin(this.value)" value="0">
+        <br />
+         <span>Border</span> <input id="boxBorder" type="range" min="0" max="15" step="0.1" onInput="updateBorder(this.value)" value="0">
+        <br />
+        <span>Border-Box</span>
+        <input type="checkbox" onclick="updateBoxSizing(this)"/>
+      </div>
+      
+      <div id="exampleContainer">
+      
+      <div class="example">B1</div>
+      <div class="example">B2</div>
+      <div class="example">B3</div>
+      
+      </div>
+      <p>This Pen is part of a <a href="https://www.youtube.com/watch?v=9fneagchy8k">CSS tutorial available on Youtube </a> </p>
+        <ul class="social">
+          <li><a href="https://www.youtube.com/channel/UC7vYUkA-s5XVjS7UoyGSFbg"> Youtube </a></li>
+          <li><a href="https://www.facebook.com/robosquidtv/"> Facebook </a></li>
+          <li><a href="https://twitter.com/RoboSquidTV"> Twitter </a></li>
+        </ul>
+        
+        </div>
+        
+      
+        
+      </div>
+</body>
+</html>
+

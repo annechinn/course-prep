@@ -1,0 +1,32 @@
+/* pixels */
+
+.d1 {
+    background-color: red;
+    padding:20px;
+}
+p {
+    font-size: 16px;
+} 
+
+
+/* using rem, relative to html element */
+/* html {
+    font-size: 10px;
+}
+
+.d1 {
+    background-color: red;
+    width: 50rem; 
+}
+p {
+    font-size: 1.4rem;
+} */
+
+div.vh {
+    width: 60%;
+    background-color:pink;
+}
+div.vh div {
+    background-color:blue;
+    width: 60vw;
+}

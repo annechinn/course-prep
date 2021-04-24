@@ -1,0 +1,22 @@
+* {
+    font-family: 'Lato';
+  }
+  
+  h2 {
+    color: blue;
+  }
+  
+  .heading1-div-class {
+      /* background-color:red; */
+  }
+
+  #heading2-div-id {
+    background:yellow;
+  }
+
+  .heading3-div-class li.warning {
+    color: red; 
+  }
+
+.universal-selector * { border: 1px dotted black; }
+  

@@ -1,0 +1,82 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+  body, html {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  background: #43C6AC;  /* fallback for old browsers */
+  background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  }
+  
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+  }
+  
+  #controls {
+    padding: 2em;
+    background-color: #66BB6A;
+    font-weight: bold;
+    border-radius: 0.4em;
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  #exampleContainer {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    width: 55em;
+    justify-content: center;
+    border: 5px solid #FFF;
+  }
+  
+  .example{
+    background-color: #2ecc71;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+
+    min-width:2em;
+  }
+  
+  
+  span{
+    display: inline-block;
+    width: 6em;
+    margin: 0.1em;
+  }
+  
+  a  {
+  
+    color: #FFF;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+  }

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+   }
+
+#container {
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    text-align:center;
+    border: solid 1px black;
+}
+   
+.header {
+    height: 80px;
+    background-color: grey;
+}
+   
+.menu {
+    height: 80px;
+    background-color: #F0F0F0;
+    border: solid 1px black;
+}
+   
+.navigation {
+    width: 20%;
+    height: 500px;
+    background-color: #696A6C;
+    float: left;
+}
+   
+.mainbody {
+    width: 80%;
+    height: 500px;
+    background-color: #D4D0D0;
+    float: right;
+}
+   
+.footer {
+    height: 60px;
+    background-color: grey;
+    clear: both;
+    border: solid 1px black;
+}

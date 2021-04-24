@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,600|Roboto:300,400,700');
+
+/* Background image */
+
+body {
+  background-image: url('mouse.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  color:white;
+  font-size:48px;
+}
