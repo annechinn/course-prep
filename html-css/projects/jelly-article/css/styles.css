@@ -1,24 +1,20 @@
 body {
-    font-family: Georgia, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
+    margin:40px 60px;
 }
 
-main {
-    margin: 48px;
-}
-
-section {
+.jelly {
     margin-bottom: 40px;
 }
 
 h1 {
     font-size: 32px;
-    margin-top:8px;
     margin-bottom:0px;
 }
 
 
-#topic-link {
+.topic-link {
     font-size: 20px;
     color: #e7131a;
 }
