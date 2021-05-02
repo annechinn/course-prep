@@ -19,16 +19,21 @@ body {
   width:100%;
 }
 
-.comments-section .actions {
+.comments-section .new-comment-actions {
   display:flex;
   justify-content: flex-end;
 }
 
-.comments-section .actions button {
+.btn {
   margin:5px;
   padding: 6px 16px;
   border-radius:5px;
   border-width:0px;
+}
+
+.btn-primary {
+  background-color:dodgerblue;
+  color:white;
 }
 
 .comment {
@@ -40,7 +45,6 @@ body {
   width:30px; 
   height:30px;
   padding-right:10px;
-  display:block;
 }
 
 .comment-details .comment {

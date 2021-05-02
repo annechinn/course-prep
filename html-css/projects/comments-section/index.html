@@ -19,61 +19,61 @@
       }
     </script>
     <button onclick="toggleCommentsSection()">Toggle Comments Section</button>
+
     <section id="comments-section" class="comments-section">
       <header>
         <span class="title">Comments</span>
         <span class="count">1136</span>
-      </header>
-      <div class="new-comment-area">
-        <div class="user-info"></div>
-        <textarea
-          class="new-comment-input"
-          rows="3"
-          placeholder="Share your thoughts."
-        ></textarea>
-        <div class="actions">
-          <button>Cancel</button>
-          <button>Submit</button>
+        <div>
+          <textarea
+            class="new-comment-input"
+            rows="3"
+            placeholder="Share your thoughts."
+          ></textarea>
+          <div class="new-comment-actions">
+            <button class="btn">Cancel</button>
+            <button class="btn btn-primary">Submit</button>
+          </div>
         </div>
-      </div>
+      </header>
 
-      <section class="comments">
-        <div class="comment">
+      <div>
+        <section class="comment">
           <img src="images/user1-avatar.png" alt="" />
           <div class="comment-details">
             <div class="name">Jon James</div>
 
             <span class="location">Luisville, KY |</span>
             <span class="timestamp">41m ago</span>
-            <div class="comment">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
-            </div>
+            </p>
             <div class="comment-summary">
-              <a href="" class="recommend-link">8 Recommended</a>
+              <a href="">8 Recommended</a>
             </div>
           </div>
-        </div>
-        <div class="comment">
+        </section>
+        <section class="comment">
           <img src="images/user2.avatar.png" alt="" />
           <div class="comment-details">
             <div class="name">Sally Smith</div>
             <span class="location">Seattle, WA |</span>
             <span class="timestamp">1h ago</span>
-            <div class="comment">
+            <p>
               Lobortis feugiat vivamus at augue. Amet cursus sit amet dictum sit
               amet justo. Lacinia quis vel eros donec ac odio. Tempor orci eu
               lobortis elementum. Amet consectetur adipiscing elit duis
               tristique. Sit amet massa vitae tortor condimentum lacinia quis
-            </div>
+            </p>
             <div class="comment-summary">
-              <a href="" class="recommend-link">123 Recommended</a>
+              <a href="">123 Recommended</a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </section>
   </body>
 </html>

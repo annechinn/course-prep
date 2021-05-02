@@ -24,12 +24,12 @@ h1 {
     margin:0 0 8px 0;
 }
 
-.title > address, .title > time {
+.title-section > address, .title-section > time {
     font-weight: 600;
     font-size: 11px;
 }
 
-.title > address {
+.title-section > address {
     display: inline;
     color: #e7131a;
 }
@@ -55,13 +55,7 @@ h1 {
     color: #e7131a;
 }
 
-.jelly figure {
-    margin-left:0;
-}
 
-figure img {
-    width:100%;
-}
 
 
 

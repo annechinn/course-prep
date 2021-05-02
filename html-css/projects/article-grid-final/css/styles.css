@@ -78,7 +78,6 @@ a {
   .showcase p {
     width:50%;
   }
-  
 }
 
 .btn {
@@ -97,6 +96,63 @@ a {
   opacity: 0.9;
 }
 
+.nav-container {
+  background: #fff;
+  padding: 18px;
+  display: flex;
+  flex-wrap:wrap;
+}
 
+.nav-container .logo {
+  width: 180px;
+}
 
+.nav-container ul {
+  display: flex;
+  flex-wrap:wrap;
+  list-style: none;
+}
+  
+.nav-container a {
+  padding: 12px;
+  font-weight: bold;
+}
+  
+.nav-container a:hover {
+  background: var(--light-color);
+}
+  
+  .footer-container img {
+    width: 150px;
+  }
+  
+ .footer-container a {
+    color: #fff;
+  }
 
+  .footer-container a:hover {
+    color: red;
+  }
+  
+  .footer-container {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:32px;
+  }
+  
+  @media screen and (min-width:600px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+  }
+  .footer-container input[type='email'] {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  
+  
