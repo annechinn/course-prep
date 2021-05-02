@@ -1,8 +1,6 @@
 import React from "react";
-import ShowCaseArticle from "./ShowCaseArticle";
-import articles from "../data/articles";
-import ArticleCard from "./ArticleCard";
 import styled from "styled-components";
+import Home from './Home';
 
 
 const ArticlesSection = styled.section`
@@ -17,22 +15,8 @@ const ArticlesSection = styled.section`
 
 const Main = () => {
 
-    const showCaseArticleId = 1;
-    const showCaseArticle = articles.find(x=>x.id===showCaseArticleId);
-
-    const articlesJSX = articles
-        .filter(x=>x.id!=showCaseArticle.id)
-        .map(article=><ArticleCard key={article.id} article={article}/>);
-
     return (
         <>
-
-            <header>
-                <ShowCaseArticle  article={showCaseArticle}/>
-            </header>
-            <ArticlesSection>
-                {articlesJSX}
-            </ArticlesSection>
 
         </>
     )

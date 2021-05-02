@@ -1,0 +1,73 @@
+
+html {
+    --sedans-color:  hsl(31, 77%, 52%);
+    --suvs-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+}
+body {
+    color:white;
+    margin: 100px 100px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight:400;
+}
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius:10px;
+}
+
+section {
+    padding: 40px;
+}
+
+section img {
+    padding-bottom:30px;
+}
+
+section .title {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight:700;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+section p {
+    margin-top:30px;
+    margin-bottom:40px;
+    opacity: 40%;
+}
+
+section.sedans {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--sedans-color);
+
+}
+
+section.sedans button {
+    color: var(--sedans-color);
+}
+
+section.suvs {
+    background-color: var(--suvs-color);
+}
+
+section.suvs button {
+    color: var(--suvs-color);
+}
+
+section.luxury {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--luxury-color);
+}
+
+section.luxury button {
+    color: var(--suvs-color);
+}
+
+section button {
+    border-radius:10px;
+    padding:8px 20px;
+    border-width:0px;
+}

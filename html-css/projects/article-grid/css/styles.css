@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
     --primary-color: #c72727;
     --light-color: #f3f3f3;
     --dark-color: #333;
     --link-color: #333;
-  }
-  
-  .category {
+
     --sports-color: #f99500;
     --arts-color: #a66bbe;
     --tech-color: #009cff;
@@ -27,41 +27,24 @@ html {
     text-decoration: none;
   }
 
-  .btn {
-    display: inline-block;
-    border: none;
-    background: var(--dark-color);
-    color: #fff;
-    padding: 8px 12px;
-  }
-
-  .btn-primary {
-    background: var(--primary-color);
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-
-  #articles {
+  .articles {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 16px;
   }
 
   @media screen and (min-width:600px) {
-    #articles {
+    .articles {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
-  .card {
+  .articles > article {
     background: #fff;
     padding: 16px;
   }
 
   .category {
-    display: inline-block;
     color: #fff;
     font-size: 9px;
     text-transform: uppercase;
@@ -85,104 +68,6 @@ html {
     background-color: var(--science-color);
   }
 
-  #showcase {
-    color: #fff;
-    padding: 32px;
-    height: 40vh;  
-    background: url('../images/robot.jpg')  center/cover;
-  }
-  
-  #showcase .showcase-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-  }
-
-  #main-nav {
-    background: #fff;
-  }
-  
-  #main-nav .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 18px;
-    justify-content: right;
-  }
-
-  #main-nav ul {
-    text-align:right;
-    flex-direction:column;
-    display: flex;
-  }
-
-@media screen and (min-width:600px) {
-  #main-nav .container {
-    grid-template-columns: 6fr 3fr 2fr;
-  }
-
-  #main-nav ul {
-    flex-direction:row;
-  }
-}
-  
-  #main-nav .logo {
-    width: 180px;
-  }
-
-  #main-nav ul {
-    list-style: none;
-  }
-  
-  #main-nav ul li a {
-    padding: 12px;
-    font-weight: bold;
-  }
-  
-  #main-nav ul li a:hover {
-    background: var(--light-color);
-  }
-
-  #main-nav ul li a.current {
-    background: var(--primary-color);
-    color: #fff;
-  }
-  
-
-  #main-footer {
-    background-color: var(--dark-color);
-    color: #fff;
-  }
-  
-  #main-footer img {
-    width: 150px;
-  }
-  
-  #main-footer a {
-    color: #fff;
-  }
-
-  #main-footer a:hover {
-    color: red;
-  }
-  
-  #main-footer .footer-container {
-    padding: 32px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 24px;
-  }
-  
-  @media screen and (min-width:600px) {
-    #main-footer .footer-container {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-
-  #main-footer .footer-container input[type='email'] {
-    padding: 8px;
-    margin-bottom: 8px;
-  }
   
   
   

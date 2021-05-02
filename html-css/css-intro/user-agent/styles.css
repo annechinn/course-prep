@@ -1,0 +1,18 @@
+
+body {
+    background-color:red;
+    color:white;
+    text-transform: uppercase;
+}
+
+
+/* user-agent defined body margin 
+   override: change h1 to inline
+*/
+
+h1 {
+    display:inline;
+    background-color: blue;  
+}
+
+

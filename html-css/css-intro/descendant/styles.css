@@ -1,0 +1,25 @@
+
+
+body {
+    border:solid 1px black;
+    padding:20px;
+}
+
+
+ul {
+    padding:20px;
+}
+
+section > a {
+    color: green;
+    text-decoration: none;
+}
+
+ul a {
+    color:deeppink;
+    font-weight:800;
+}
+
+
+
+

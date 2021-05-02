@@ -1,0 +1,45 @@
+
+body {
+  margin:20px;
+  color:white;
+}
+
+main {
+  padding:30px;
+  background-color: #1c2329;
+}
+
+h1 {
+  color: #fe931f;
+}
+
+a {
+  color:#fe931f;
+}
+
+.date {
+  border-radius:5px;
+  color:white;
+  background-color: #fe931f;
+  padding:8px;
+}
+
+.date:hover {
+  color:#1c2329;
+}
+
+.orange-p {
+  margin-bottom:40px;
+  padding:20px;
+  background-color:#fe931f;
+  color:black;
+}
+
+.orange-p a {
+  color:white;
+  text-decoration:none;
+}
+
+.orange-p a:hover {
+  color:black;
+}

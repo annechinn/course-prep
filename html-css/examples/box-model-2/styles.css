@@ -1,0 +1,10 @@
+body {
+  background: grey;
+  color:white;
+}
+
+p {
+  background-color:red;
+  width:200px;
+  height:200px;
+}

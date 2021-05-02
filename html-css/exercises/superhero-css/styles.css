@@ -1,0 +1,40 @@
+
+body {
+    margin:20px 60px;
+
+    font-family: Poppins, sans-serif;
+}
+
+section {
+    margin-bottom:50px;
+    padding:20px;
+}
+
+.section1 {
+    background-color: #9e000e;
+    color:white;
+}
+
+.section1 li {
+    color:black;
+    font-weight:600;
+}
+
+.section2 {
+    background-color: #2988b6;
+    color:white;
+}
+
+.section2 a:hover {
+    color:#000;
+}
+.section3 {
+    background-color: #a5a5a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width:100%;
+    border: solid 2px black;
+}
+

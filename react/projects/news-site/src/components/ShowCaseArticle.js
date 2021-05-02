@@ -2,7 +2,6 @@
 import React from "react";
 import styled from "styled-components";
 import Category from "./Category";
-import topics from "../data/topics";
 
 const ShowCaseBackground = styled.div`
     color: #fff;

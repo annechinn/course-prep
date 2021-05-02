@@ -1,0 +1,28 @@
+
+body {
+    background-color:red;
+    color:white;
+}
+
+/* type */
+p {
+    padding:20px;
+}
+
+/* id */
+#p1 {
+    background-color:orange;
+}
+
+#p2 {
+    background-color: darkcyan;
+}
+
+/* class */
+.p3 {
+    background-color:purple;
+}
+
+
+
+
