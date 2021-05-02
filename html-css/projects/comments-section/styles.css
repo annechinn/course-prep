@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.comments-section {
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.comments-section .title {
+  font-size:32px;
+}
+
+.comments-section .new-comment-input {
+  width:100%;
+}
+
+.comments-section .actions {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.comments-section .actions button {
+  margin:5px;
+  padding: 6px 16px;
+  border-radius:5px;
+  border-width:0px;
+}
+
+.comment {
+  display:flex;
+  margin-bottom:30px;
+}
+
+.comment img {
+  width:30px; 
+  height:30px;
+  padding-right:10px;
+  display:block;
+}
+
+.comment-details .comment {
+  margin-bottom:10px;
+
+}
+.comment .name {
+  font-weight:bold;
+}
+
+.comment .location,
+.comment .timestamp {
+  opacity:.4;
+}
+
+.comment .comment-summary {
+  color:rgb(50, 104, 145);
+}
+
+.comment a {
+  text-decoration: none;
+}
