@@ -121,11 +121,6 @@ a {
 .nav-container a:hover {
   background: var(--light-color);
 }
-
-.footer-container {
-  background-color: var(--dark-color);
-  color: #fff;
-}
   
   .footer-container img {
     width: 150px;
@@ -140,7 +135,8 @@ a {
   }
   
   .footer-container {
-    color:#fff;
+    background-color: var(--dark-color);
+    color: #fff;
     padding: 32px;
     display: grid;
     grid-template-columns: 1fr;
