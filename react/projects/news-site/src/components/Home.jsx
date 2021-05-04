@@ -20,7 +20,7 @@ const Home = () => {
   const showCaseArticle = articles.find(x=>x.id===showCaseArticleId);
 
   const articlesJSX = articles
-      .filter(x=>x.id!=showCaseArticle.id)
+      .filter(x=>x.id!==showCaseArticle.id)
       .map(article=><ArticleCard key={article.id} article={article}/>);
 
   return (

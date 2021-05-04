@@ -4,6 +4,8 @@ body {
     margin:40px 60px;
 }
 
+/******************* Article *****************/
+
 .jelly {
     margin-bottom: 40px;
 }
@@ -55,6 +57,69 @@ h1 {
     color: #e7131a;
 }
 
+/************************** Comments **************************/
+
+.comments-section .title {
+  font-size:24px;
+}
+
+.comments-section .count {
+    opacity:.8;
+}
+
+.comments-section hr {
+    margin-bottom:40px;
+}
+
+.comments-section .new-comment-input {
+  width:100%;
+}
+
+.comments-section .new-comment-actions {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin:5px;
+  padding: 6px 16px;
+  border-radius:5px;
+  border-width:0px;
+}
+
+.btn-primary {
+  background-color:dodgerblue;
+  color:white;
+}
+
+.comment {
+  display:flex;
+  margin-bottom:30px;
+}
+
+.comment img {
+  width:30px; 
+  height:30px;
+  padding-right:10px;
+}
+
+
+.comment .name {
+  font-weight:bold;
+}
+
+.comment .location,
+.comment .timestamp {
+  opacity:.4;
+}
+
+.comment .comment-summary {
+  color:rgb(50, 104, 145);
+}
+
+.comment a {
+  text-decoration: none;
+}
 
 
 

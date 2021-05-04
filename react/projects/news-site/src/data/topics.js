@@ -1,9 +1,11 @@
+import colors from './colors';
+
 const Topics = {
-    Tech: { className: 'category-tech', color: '#009cff', label: 'Tech' },
-    Science: {className: 'category-science', color: '#3bd142', label: 'Science'},
-    Food:{ className: 'category-food', color: '#d1483b', label: 'Food'},
-    Arts: { className: 'category-arts', color: '#a66bbe', label: 'Arts' },
-    Sports: { className: 'category-sports', color: '#f99500', label: 'Sports'}
+    tech: { className: 'category-tech', color: colors['sports'], label: 'Tech' },
+    science: {className: 'category-science', color: colors['science'], label: 'Science'},
+    food:{ className: 'category-food', color: colors['food'], label: 'Food'},
+    arts: { className: 'category-arts', color: colors['arts'], label: 'Arts' },
+    sports: { className: 'category-sports', color: colors['sports'], label: 'Sports'}
 };
 
 export default Topics;
