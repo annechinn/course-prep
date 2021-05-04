@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import articles from "../data/articles";
 import Comment from "./Comment";
-import CommentsPanel from "./SlidingPanel";
+import SlidingPanel from "./SlidingPanel";
 
 const StyledImage = styled.img`
   width:100%;
@@ -15,9 +15,24 @@ const StyledButton = styled.button`
     border-radius:5px;
 `
 
+const CommentsSectionHeader = styled.header`
+  .title {
+    font-size:32px;
+  }
+
+  .new-comment-input {
+    width:100%;
+  }
+  
+  .new-comment-actions {
+    display:flex;
+    justify-content: flex-end;
+  }
+`
+
 const Article = (props) => {
 
-  const [showComments, setState] = useState(false);
+  const [showComments, setShowComments] = useState(false);
 
   const article = articles.find(x=>x.id === parseInt(props.id));
 
@@ -27,13 +42,13 @@ const Article = (props) => {
   </div>
 
   function toggleCommentsPanel(show) {
-    setState(show);
+    setShowComments(show);
   }
 
   return (
     <>
-    <CommentsPanel show={showComments} togglePanelFcn={toggleCommentsPanel}>
-      <header>
+    <SlidingPanel show={showComments} togglePanelFcn={toggleCommentsPanel}>
+      <CommentsSectionHeader>
         <span class="title">Comments</span>
         <span class="count">1136</span>
         <div>
@@ -47,9 +62,9 @@ const Article = (props) => {
             <button class="btn btn-primary">Submit</button>
           </div>
         </div>
-      </header>
+      </CommentsSectionHeader>
         {commentsJSX}
-    </CommentsPanel>
+    </SlidingPanel>
 
     <h1>{article.title}</h1>
     <h3>{article.abstract}</h3>

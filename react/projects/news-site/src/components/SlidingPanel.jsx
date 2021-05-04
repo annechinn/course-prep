@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledPanelWrap = styled.div`
+const PanelWrapper = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   width: 30em;
   transition: .3s ease-out;
+  transform: ${props=>props.show?'translateX(0%)':'translateX(100%)'}
 `
 
-const StyledPanel = styled.div`
+const Panel = styled.div`
   position: absolute;
   background-color:white;
   top: 0;
@@ -21,24 +22,21 @@ const StyledPanel = styled.div`
   padding: 1em;
 `
 
-const StyledButton = styled.button`
+const HideButton = styled.button`
     border-width:0px;
     padding:8px 16px;
     border-radius:5px;
 `
 
-const SlidingPanel = (props) => {
-
-  let panelStyle = {transform: props.show? 'translateX(0%)':'translateX(100%)'};
-
+const SlidingPanel = ({show, togglePanelFcn, children}) => {
   return (
     <>
-    <StyledPanelWrap style={panelStyle} >
-      <StyledPanel>
-      <StyledButton onClick={()=>props.togglePanelFcn(false)}>Hide</StyledButton>
-        {props.children}
-      </StyledPanel>
-    </StyledPanelWrap>
+    <PanelWrapper show={show}>
+      <Panel>
+      <HideButton onClick={()=>togglePanelFcn(false)}>Hide</HideButton>
+        {children}
+      </Panel>
+    </PanelWrapper>
     </>
   )
 
