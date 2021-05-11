@@ -1,6 +1,6 @@
 import React from "react-dom";
 import styled from "styled-components";
-import userAvatar from "../images/user1-avatar.png";
+import userAvatar from "../assets/images/user1-avatar.png";
 
 const StyledComment = styled.section`
   display:flex;

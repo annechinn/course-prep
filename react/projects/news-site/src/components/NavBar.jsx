@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, NavLink} from "react-router-dom";
 import styled from "styled-components";
-import logo from "../images/logo.png";
+import logo from "../assets/images/logo.png";
 import colors from "../data/colors";
 import topics from "../data/topics";
 

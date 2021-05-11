@@ -17,47 +17,43 @@
             align-items: center;
             
           }
+        div > div {
+            margin-bottom: 40px;
+            border: solid 1px black;
+        }
 
           .one {
-            margin-bottom:40px;
             /* offset-x | offset-y */
             box-shadow: 5px 5px;
-            border: solid 1px black;
         }
 
         .two {
-            margin-bottom:40px;
             /* offset-x | offset-y | color */
             box-shadow: 5px 5px red;
-            border: solid 1px black;
         }
 
         .three {
-            margin-bottom:40px;
             /* offset-x | offset-y | blur-radius  */
             box-shadow: 5px 5px 10px;
-            border: solid 1px black;
+
         }
 
         .four {
-            margin-bottom:40px;
             /* offset-x | offset-y | blur-radius | spread-raidus  */
             box-shadow: 5px 5px 10px 5px;
-            border: solid 1px black;
         }
 
     </style>
 </head>
 <body> 
     <div>
+        <div class='one'><strong>one</strong> x-offset: 5px, y-offset: 5px</div>
 
-        <div class='one'>x-offset: 5px, y-offset: 5px</div>
+        <div class='two'><strong>two</strong>x-offset: 5px, y-offset: 5px, color: red</div>
 
-        <div class='two'>x-offset: 5px, y-offset: 5px, color: red</div>
+        <div class='three'><strong>three</strong>x-offset: 5px, y-offset: 5px, blur-radius: 10px</div>
 
-        <div class='three'>x-offset: 5px, y-offset: 5px, blur-radius: 10px</div>
-
-        <div class='four'>x-offset: 5px, y-offset: 5px, blur-radius: 10px, spread-radius: 5px</div>
+        <div class='four'><strong>four</strong>x-offset: 5px, y-offset: 5px, blur-radius: 10px, spread-radius: 5px</div>
     </div>
 </body>
 </html>
