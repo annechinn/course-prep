@@ -1,30 +1,23 @@
 
 function getBoxes() {
-    return document.getElementsByClassName('example');
+    return document.getElementsByClassName('box');
 }
 
-function updateHeight(value){
-    Array.from(getBoxes()).forEach((box)=>box.style.height = `${value}em`);
-  }
-  
-  function updateWidth(value){
-     Array.from(getBoxes()).forEach((box)=>box.style.width = `${value}em`);
-  }
-  
-  
-  function updatePadding(value){
-     Array.from(getBoxes()).forEach((box)=>box.style.padding = `${value}em`);
-  }
-  
-  function updateMargin(value){
-    Array.from(getBoxes()).forEach((box)=>box.style.margin = `${value}em`);
-  }
-  
-  
-  function updateBorder(value){
-    Array.from(getBoxes()).forEach((box)=>box.style.borderWidth = `${value}em`);
-  }
-  
-  function updateBoxSizing(cb){
-    cb.checked ? document.querySelector('#wrapper').style.boxSizing = "border-box" : document.querySelector('#wrapper').style.boxSizing = "content-box";
-  }
+function updateCurrentValue(prop, value) {
+  Array.from(getBoxes()).forEach((box)=>box.style[prop] = `${value}px`);
+
+  let el = document.getElementById(prop);
+  el.innerText = `${value}px`;
+}
+
+function updatePadding(value){
+  updateCurrentValue('padding', value);
+}
+
+function updateMargin(value){
+  updateCurrentValue('margin', value);
+}
+
+function updateBorder(value){
+  updateCurrentValue('borderWidth', value);
+}

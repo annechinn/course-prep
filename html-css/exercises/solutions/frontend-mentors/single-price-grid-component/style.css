@@ -56,14 +56,14 @@ main {
 }
 
 .card {
-  overflow:hidden;
-  border-radius: 8px;
   box-shadow: 0 4px 12px 0 var(--lightGrey);
 }
 
 /******************** Join **********************/
 
 .join {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   background-color: white;
 }
 
@@ -75,6 +75,7 @@ main {
 
 .subscribe {
   background-color: var(--cyan);
+  border-bottom-left-radius: 8px;
 }
 
 .subscribe .pricing {
@@ -94,6 +95,7 @@ main {
 
 .why-us {
   background-color: var(--cyan-lighter);
+  border-bottom-right-radius: 8px;
 }
 
 .why-us ul {
