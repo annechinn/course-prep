@@ -50,6 +50,7 @@ main {
   box-shadow:  6px 6px 12px #bebebe;
   display:flex;
   flex-direction:column;
+
 }
 
 .card-title {

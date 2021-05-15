@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+  box-sizing: border-box;
+}
 html {
   --primary-color: #c72727;
   --light-color: #f3f3f3;
@@ -72,10 +75,6 @@ a {
   padding: 32px;
   height: 40vh;
   background: url("../images/robot.jpg") center/cover;
-}
-
-.showcase.food {
-  background: url("../images/french-toast.jpg") center/cover;
 }
 
 @media screen and (min-width: 600px) {
@@ -168,4 +167,38 @@ a {
 .footer-container input[type="email"] {
   padding: 8px;
   margin-bottom: 8px;
+}
+
+
+/************************ Main Content **********************/
+
+.nav-container,
+.footer-container,
+.main-content {
+  border: solid 2px lightgrey;
+  padding:20px;
+}
+
+.nav-container a.active {
+  color: var(--primary-color);
+}
+
+.showcase.tech {
+  background: url("../images/robot.jpg") center/cover;
+}
+
+.showcase.food {
+  background: url("../images/french-toast.jpg") center/cover;
+}
+
+.showcase.tech {
+  background: url("../images/skull.jpg") center/cover;
+}
+
+.showcase.arts {
+  background: url("../images/break-dancer.jpg") center/cover;
+}
+
+.showcase.science {
+  background: url("../images/blue-footed-bird.jpg") center/cover;
 }

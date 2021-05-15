@@ -1,0 +1,82 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button {
+  border: 0;
+  font-size: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 175%;
+}
+
+body {
+  background-color:antiquewhite;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+#calculator {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+#display {
+  background-color: #222222;
+  color: #fff;
+  font-size: inherit;
+  padding: 16px 20px;
+  text-align: right;
+}
+
+#keys {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#keys > * {
+  background-color: #fff;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+/* .keys > *:active::before,
+.keys > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+} */
+
+#keys .key-operator {
+  background-color: #eee;
+}
+
+#keys .key-equal {
+  background-color: #ff7033;
+  grid-column: 4;
+  grid-row: 2 / span 4;
+}
