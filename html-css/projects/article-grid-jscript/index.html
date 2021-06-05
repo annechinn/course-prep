@@ -9,26 +9,20 @@
   </head>
   <body>
     <main>
-
-      <!----------------------- NavBar ------------------------>
-      <nav class="nav-container">
-        <a href="index.html">
-          <img src="images/logo.png" class="logo" />
-        </a>
-        <ul>
-          <li><a id="tech-link"    onclick="respondToTechLinkClick(event)" href="">Tech</a></li>
-          <li><a id="science-link" onclick="respondToTechLinkClick(event)"href="">Science</a></li>
-          <li><a id="food-link"    onclick="respondToTechLinkClick(event)" href="">Food</a></li>
-          <li><a id="arts-link"    onclick="respondToTechLinkClick(event)" href="">Arts</a></li>
-          <li><a id="sports-link"  onclick="respondToTechLinkClick(event)"  href="">Sports</a></li>
-          <li><a href="">Account</a></li>
-       </ul>
-      </nav>
-
-      <!-------------------- Main Content --------------------->
-      <div id="main-content">
-        Main Content
+      <!----------------------- NavBar -------------------->
+      <div id="nav-bar">
+        Navbar
       </div>
+
+      <!-------------------- Showcase --------------------->
+      <div id="showcase">
+        Showcase
+      </div>
+
+      <!-------------------- Article Grid --------------------->
+      <section id="article-grid" class="articles">
+        Article Grid
+      </section>
 
       <!----------------------- Footer ------------------------>
       <footer class="footer-container">
@@ -44,6 +38,7 @@
       </footer>
     </main>
 
+    <script src="data/articles.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+GET http://localhost:3000/articles
+
+###
+
+GET http://localhost:3000/articles/60b99c01990c822f40b193e5
+
+###
+
+POST http://localhost:3000/articles
+Content-Type: application/json
+
+{
+  "title": "Second Article"
+}
