@@ -30,11 +30,6 @@ a {
   grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 600px) {
-  .articles {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
 .articles > article {
   background: #fff;
@@ -44,7 +39,6 @@ a {
 .category {
   color: #fff;
   font-size: 9px;
-  padding: 4px 8px;
   border-radius: 10px;
 }
 
