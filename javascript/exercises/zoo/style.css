@@ -1,0 +1,22 @@
+
+body {
+  padding:40px;
+  background-color:lightgrey !important;
+}
+
+#ac-buttons {
+  margin-bottom:20px;
+}
+
+.animal-type-header {
+  padding:4px;
+  background-color:#FFF;
+  display:flex;
+  flex-direction:column;
+}
+.animals {
+  margin-top:20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:16px;
+}
