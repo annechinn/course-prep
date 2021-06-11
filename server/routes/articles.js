@@ -12,14 +12,13 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', getArticle, (req, res) => {
-  const id = req.params.id;
-  const article = res.article;
-  res.send(article);
+  res.send(res.article);
 });
 
 router.post('/', async (req, res) => {
   const article = new Article({
-    title: req.body.title
+    title: req.body.title,
+    abstract: req.body.abstract
   });
 
   try {
@@ -47,7 +46,5 @@ async function getArticle(req, res, next) {
   res.article = article;
   next();
 }
-
-
 
 module.exports = router;

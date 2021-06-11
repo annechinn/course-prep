@@ -1,3 +1,42 @@
+function getHTMLForSummaryTable() {
+
+  let rowsHTML = zoo.animalTypes.map((animalType) => {
+
+    let animalsOfType = zoo.animals.filter(animal=>animal.typeId===animalType.id);
+
+    let residentsOfTypeString = animalsOfType.map(animal=>{
+      return `
+        <strong>${animal.name}</strong> (${animal.sex}, ${animal.age})
+      `;
+    }).join(" ");
+
+    return `
+    <tr>
+      <td>${animalType.name}</td>
+      <td>${animalType.location}</td>
+      <td>${animalsOfType.length}</td>
+      <td>${residentsOfTypeString}</td>
+    </tr>
+    `;
+  }).join(" ");
+
+  let html = `
+    <table class="table table-striped">
+      <thead>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Number</th>
+        <th>Residents</th>
+      </thead>
+      <tbody>
+        ${rowsHTML}
+      </tbody>
+    </table>
+  `;
+
+  return html;
+}
+
 function getHTMLForAnimal(animal) {
     return `
       <div class="card">
@@ -78,6 +117,18 @@ function getHTMLForAnimal(animal) {
     });
   }
 
+  function showSummaryTable() {
+    let element = document.getElementById('main-content');
+    element.innerHTML = getHTMLForSummaryTable();
+  }
+
+  function initSummaryButton() {
+    let button = document.getElementById("summary-link");
+    button.addEventListener("click", ()=> {
+      showSummaryTable();
+    });
+  }
   initAnimalTypes();
   initHomeButton();
   showHome();
+  initSummaryButton();

@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=-RCnNyD0L-s login app
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+var cors = require('cors');
+
 const connectionOptions = {
   useNewUrlParser: true, useUnifiedTopology: true
 }
@@ -21,10 +23,13 @@ const db = mongoose.connection;
 db.on('error', (error)=>console.log(error));
 db.once('open', ()=> console.log('connected to database'));
 
+// cors
+app.use(cors({ origin: true, credentials: true }));
 
+// init middlewear
 app.use(express.json());
 
 const articleRouter = require('./routes/articles');
 app.use('/articles', articleRouter);
 
-app.listen(3000, () => console.log('Server Started'));
+app.listen(8082, () => console.log('Server Started'));
