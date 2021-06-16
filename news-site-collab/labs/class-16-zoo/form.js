@@ -37,7 +37,7 @@ function setupFormEventHandlers() {
     form.style.display = "none";
   })
   
-  // when user clocks "Submit" on form
+  // when user clicks "Submit" on form
   let submitBtn = document.getElementById("submit-btn");
   submitBtn.addEventListener("click", (event)=> {
     event.preventDefault();
