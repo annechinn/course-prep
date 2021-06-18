@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding:100px;
+}
+
+#book-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  #book-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#book-grid > .book {
+  background: #fff;
+  padding: 16px;
+}
+
+.rank {
+  font-weight:bold;
+  color: steelblue;
+}
+
