@@ -28,10 +28,10 @@ function processForm(event) {
   
   let form = document.getElementById("form");
 
-  let numAdults = parseInt(form.elements["adults"].value);
-  let numSeniors = parseInt(form.elements["seniors"].value);
-  let numChildren = parseInt(form.elements["children"].value);
-  let coupon = form.elements["coupon"].value;
+  let numAdults = parseInt(form.elements.adults.value);
+  let numSeniors = parseInt(form.elements.seniors.value);
+  let numChildren = parseInt(form.elements.children.value);
+  let coupon = form.elements.coupon.value;
   let numTickets = numAdults + numSeniors + numChildren;
 
   let adultTotal = zoo.prices.adult * numAdults;
@@ -39,12 +39,28 @@ function processForm(event) {
   let childTotal = zoo.prices.child * numChildren;
   let totalCost = (adultTotal + seniorTotal + childTotal);
 
+  let totalCostAfterDiscount = 0;
+
+  let discountHTML = "";
   let discountRate = .10;
   let discount = 0;
   if (coupon === "ZOOPASS") {
-    discount = -(totalCost*discountRate);
-    totalCost+=discount;
+    discount = (totalCost*discountRate);
+    totalCostAfterDiscount= totalCost - discount;
+    discountHTML = `
+      <tr>
+        <td>Discount</td>
+        <td></td>
+        <td></td>
+        <td>-${discount.toFixed(2)}</td>
+      </tr>
+      <tr>
+      <td colspan="3">Total After Discount</td>
+      <td>${totalCostAfterDiscount.toFixed(2)}</td>
+    </tr>
+    `;
   }
+  
   discount = discount.toFixed(2);
   totalCost = totalCost.toFixed(2);
 
@@ -78,17 +94,12 @@ function processForm(event) {
       <td>${childTotal}</td>
     </tr>
     <tr>
-      <td>Discount</td>
+      <td>Total</td>
+      <td>${numTickets}</td>
       <td></td>
-      <td></td>
-      <td>${discount}</td>
+      <td>${totalCost}</td>
     </tr>
-    <tr>
-        <td>Total</td>
-        <td>${numTickets}</td>
-        <td></td>
-        <td>${totalCost}</td>
-      </tr>
+    ${discountHTML}
     </tbody>
   </table>
 `;
