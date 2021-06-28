@@ -18,4 +18,13 @@ async function showBooks() {
             .join("");
 }
 
+// function showBooks() {
+//   let element = document.getElementById("book-grid");
+//   getBooks().then((books)=> {
+//     element.innerHTML = books
+//     .map(x=>getHTMLForBookSummary(x))
+//     .join("");
+//   })
+// }
+
 showBooks();
